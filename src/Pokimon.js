@@ -17,7 +17,7 @@ export default function PokimonSearch() {
   return (
     <div className="App">
       <h1>Search for a pokemon</h1>
-      <input type="text" onClick={onSearchInputChange}></input>
+      <input type="text" onChange={onSearchInputChange} />
       <button onClick={fetchPokemon}>Search</button>
       {status === "Loading" ? "Loading..." : null}
       {status === "error" ? error : null}
